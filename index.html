@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="main.css" rel="stylesheet">
+   <link href="./bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Country name</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="editInput">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="closeBtn">Close</button>
+        <button type="button" class="btn btn-primary" id="editbtn">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <div class ="inputs">
+
+ <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="country" id="country" onchange="selectCountry()">
+  <option selected>choose country</option>
+  <option value="Egypt">Egypt</option>
+  <option value="KSA">KSA</option>
+  <option value="Qatar">Qatar</option>
+  <option value="Iraq">Iraq</option>
+  <option value="Syria">Syria</option>
+
+</select>
+ </div>
+
+
+<!-- outputs  -->
+
+ <div class ="outputs">
+    <table class="table table-dark table-striped text-center">
+        <thead>
+         <tr>
+             <th>ID</th>
+             <th>Name</th>
+             <th>Delete</th>
+             <th>Edit</th>  
+         </tr>
+        </thead>
+        <tbody id= "tbody">
+     
+       
+        
+        </tbody>
+    </table>  
+ </div>
+
+
+
+    <script src="main.js"></script>
+    <script src="./bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
